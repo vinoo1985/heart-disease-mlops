@@ -5,7 +5,7 @@ EDA → preprocessing pipeline → model training (LogReg + RandomForest) →
 MLflow experiment tracking → packaging → CI/CD → FastAPI Docker container →
 Kubernetes deployment → Prometheus/Grafana monitoring.
 
-**Course:** MLOps (S2-25_AMLCSZG523) | **Total marks:** 50
+**Course:** MLOps (S2-25_AMLCSZG523)
 
 ---
 
