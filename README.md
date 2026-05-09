@@ -120,16 +120,6 @@ auto-loaded under **Dashboards → ML → Heart Disease API**. See
 Manifests for Minikube / Docker-Desktop K8s / managed clusters are in
 [`k8s/`](k8s/README.md). Apply with `kubectl apply -k k8s/`.
 
-## Report
-
-A consolidated PDF report (~11 pages, cover + 12 sections + appendices)
-is built from real metrics + figures by:
-
-```bash
-python scripts/generate_report.py
-# -> reports/MLOps_Assignment1_Report.pdf
-```
-
 ## Dataset
 
 UCI Heart Disease — Cleveland processed file (303 rows × 14 columns).
