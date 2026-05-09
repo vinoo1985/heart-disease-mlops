@@ -37,11 +37,11 @@ def cover_block(styles, helpers):
            "<b>Dataset:</b> UCI Heart Disease (Cleveland processed)",
            "subtitle"),
         _p(helpers, styles,
-           "<b>Student ID:</b> 2025cs05050-rgb",
+           "<b>Student ID:</b> 2025cs05050",
            "subtitle"),
         _p(helpers, styles,
            "<b>Repository:</b> "
-           "https://github.com/2025cs05050-rgb/heart-disease-mlops",
+           "https://github.com/vinoo1985/heart-disease-mlops",
            "subtitle"),
         _spacer(helpers, 50),
         _p(helpers, styles,
@@ -631,7 +631,7 @@ def section_production_deployment_intro(styles, helpers):
 
 
 # --------------------------------------- deliverables index
-REPO_URL = "https://github.com/2025cs05050-rgb/heart-disease-mlops"
+REPO_URL = "https://github.com/vinoo1985/heart-disease-mlops"
 BLOB = f"{REPO_URL}/blob/main"
 TREE = f"{REPO_URL}/tree/main"
 
