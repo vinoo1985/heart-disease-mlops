@@ -1,0 +1,137 @@
+WEBVTT
+
+1 "Vinoth Kumar Ganesan" (1727598592)
+00:00:05.249 --> 00:00:21.870
+Prediction data set. This demo covers the end to endops cycle life cycle, so.
+
+2 "Vinoth Kumar Ganesan" (1727598592)
+00:00:21.870 --> 00:00:41.870
+Okay, so while adding the report of this demo so we we'll go through them. We have given a data set which has three patient records and with the prediction of whether the patient has a heart disease or not, ok? And this is actually used for doing the.
+
+3 "Vinoth Kumar Ganesan" (1727598592)
+00:00:41.870 --> 00:00:43.650
+Data analysis.
+
+4 "Vinoth Kumar Ganesan" (1727598592)
+00:00:43.650 --> 00:01:03.650
+And feature engineering is done, pre processing is done as part of the data set. Once that is done we this data that is fed to the model which uses and for both the accuracy and.
+
+5 "Vinoth Kumar Ganesan" (1727598592)
+00:01:03.650 --> 00:01:12.420
+Recall F score and other AOC. So based on that the model predictions is done.
+
+6 "Vinoth Kumar Ganesan" (1727598592)
+00:01:12.420 --> 00:01:27.720
+And then we have actually implemented a model of workflow and the same thing is the unit test and the.
+
+7 "Vinoth Kumar Ganesan" (1727598592)
+00:01:27.720 --> 00:01:47.720
+And deploying this API for doing the prediction on the environment with higher settings. And creating a Grafana dashboard with the API calls so.
+
+8 "Vinoth Kumar Ganesan" (1727598592)
+00:01:47.720 --> 00:01:53.940
+So here the current dashboard shows what are the data that is generated.
+
+9 "Vinoth Kumar Ganesan" (1727598592)
+00:01:53.940 --> 00:02:11.370
+Okay, so below screenshots show the deployed API and the high availability settings as well as the layouts. Now let me go walk through the.
+
+10 "Vinoth Kumar Ganesan" (1727598592)
+00:02:11.370 --> 00:02:31.170
+Repository ok so we have the API with the metrics and schemas. We have the data with the process data these are all uploaded to which I'll be showing later. Okay, so then we have the docker container images later files.
+
+11 "Vinoth Kumar Ganesan" (1727598592)
+00:02:31.170 --> 00:02:48.420
+Models, autopickle file is present in these dashboards is present here along with the what are the dashboards which is provisioned.
+
+12 "Vinoth Kumar Ganesan" (1727598592)
+00:02:48.420 --> 00:03:08.220
+Notebooks has the exported data and the rest are all just for reference that is a Python notebook created to go through the process where reports has the PDF report of all the Python notebooks as well as the consolidated report for the assignment.
+
+13 "Vinoth Kumar Ganesan" (1727598592)
+00:03:08.220 --> 00:03:25.110
+So screenshots as the from the production, the screenshots are. Then we have the scripts folder where the internal scripts are used. These are all for.
+
+14 "Vinoth Kumar Ganesan" (1727598592)
+00:03:25.110 --> 00:03:42.360
+Just the report generation purpose, this is something ok then we have the testing our API and generating the new data set, generating new data.
+
+15 "Vinoth Kumar Ganesan" (1727598592)
+00:03:42.360 --> 00:03:58.770
+Okay, so let me just share the report, this is the public report which is created for this assignment and has all the details of the structure and what is present in each of the sections.
+
+16 "Vinoth Kumar Ganesan" (1727598592)
+00:03:58.770 --> 00:04:18.770
+So then this has the workflows also it has the recent pushes whatever is updated, ok? I'll go ahead with the EDA ok so this is the EDA which has been which has been developed to performity data analysis to find the.
+
+17 "Vinoth Kumar Ganesan" (1727598592)
+00:04:18.770 --> 00:04:28.649
+The values are to find out the class imbalance if anything or find out the outliers in the data set, ok? So I'll just run through the.
+
+18 "Vinoth Kumar Ganesan" (1727598592)
+00:04:28.649 --> 00:04:48.649
+Scroll through this there's already all these screenshots is saved and created as a report, ok? So this shows the class imbalance and then the feature distribution, the outplayers also are present here and there is a feature correlation heat map which shows which features are out of the 13 features which is highly correlated and.
+
+19 "Vinoth Kumar Ganesan" (1727598592)
+00:04:48.649 --> 00:04:50.399
+Which is not correlated.
+
+20 "Vinoth Kumar Ganesan" (1727598592)
+00:04:50.399 --> 00:05:10.399
+Okay, so this process data set is saved for pre processing, then moving on with the pre processing the after the pre processing of data, the screened for any missing values and the whatever is missing value is filled up with the more or median of the respective data.
+
+21 "Vinoth Kumar Ganesan" (1727598592)
+00:05:10.399 --> 00:05:30.469
+Okay, then the transport data is taken for this whole thing is ok this shows the full pipeline, ok, for logistic regression. Moving on to the model training, so we have used both logistic regression and backup this.
+
+22 "Vinoth Kumar Ganesan" (1727598592)
+00:05:30.469 --> 00:05:31.349
+Okay.
+
+23 "Vinoth Kumar Ganesan" (1727598592)
+00:05:31.349 --> 00:05:51.349
+So this shows the outputs of the Python outputs for this. Okay, so this is the what is it the model parameters for both the and this is actually chattered with the confusion matrix which shows the predictions whether.
+
+24 "Vinoth Kumar Ganesan" (1727598592)
+00:05:51.349 --> 00:05:56.519
+Two positives and false positives and false natives listed here.
+
+25 "Vinoth Kumar Ganesan" (1727598592)
+00:05:56.519 --> 00:06:16.519
+Okay so why we have picked up logistic regression is here has better numbers than the better accuracy than the shown here moving on, so this forum.
+
+26 "Vinoth Kumar Ganesan" (1727598592)
+00:06:16.519 --> 00:06:36.519
+Is developed and it is stored in a pickle file, ok? And to maintain this workflow we have actually created a docker environment on which is for open source thing. This cannot be deployed or Docker cannot be deployed on our official laptops, it has been deployed here, ok? So.
+
+27 "Vinoth Kumar Ganesan" (1727598592)
+00:06:36.519 --> 00:06:47.249
+So currently this is deployed and running so there are two namespaces which is created one for the APA which is called the hard disease and the.
+
+28 "Vinoth Kumar Ganesan" (1727598592)
+00:06:47.249 --> 00:07:05.519
+Parts of the environment, so whenever one part fails, the other part will take over the ok and that is auto scaling also is possible, we have configured auto scaling such that to five parts can come up, ok? So with the 4th active and one is.
+
+29 "Vinoth Kumar Ganesan" (1727598592)
+00:07:05.519 --> 00:07:25.519
+Then monitoring is also enabled so source to review the user live work monitoring experience for the access to the dashboards as well as the through the Prometheus Prometheus will be collect the stats from this API and it will take it on.
+
+30 "Vinoth Kumar Ganesan" (1727598592)
+00:07:25.519 --> 00:07:30.599
+And this will be shown in the Grafana dashboard.
+
+31 "Vinoth Kumar Ganesan" (1727598592)
+00:07:30.599 --> 00:07:46.319
+Okay, so for now we have actually generated us the test traffic in the which is already generated and kept. Okay, so it's been generated around 15 min back. Okay, so 15 to 30 min back. So this is where the.
+
+32 "Vinoth Kumar Ganesan" (1727598592)
+00:07:46.319 --> 00:08:06.319
+This data has been generated to check whether the test is getting updated properly. So as part of this all the monitoring is also for completed. So this brings flow where we have created a more data exported data analysis, we have processed the data we have.
+
+33 "Vinoth Kumar Ganesan" (1727598592)
+00:08:06.319 --> 00:08:26.099
+Trained the model, we have deployed the model and contain on a container and when the model is accessed and the prediction is done which this is captured live and monitored. Once if there is any deviation in the model this will get fixed in the model.
+
+34 "Vinoth Kumar Ganesan" (1727598592)
+00:08:26.099 --> 00:08:46.049
+Training ok and this will get pushed into the and once the is actually pushed to the new model will get can get deployed and automatically it will be monitored for any new variations, ok? That brings us to the end of the demo. Thank you.
