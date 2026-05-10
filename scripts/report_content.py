@@ -442,14 +442,12 @@ def section_conclusion(styles, helpers, metrics):
            f"recall = {test['test_recall']:.3f} — clinically reasonable "
            "given the dataset size."),
         _p(helpers, styles,
-           "<i>Note on figures:</i> Figures 3-5 (MLflow, Swagger, Grafana) "
-           "are programmatically rendered reproductions of the respective "
-           "UIs, produced by <code>scripts/generate_screenshots.py</code> "
-           "from real metrics in <code>reports/metrics.json</code> and the "
-           "panel layout in "
-           "<code>monitoring/grafana/dashboards/heart-disease-api.json</code>. "
-           "Figures 6-12 in §12 are <b>genuine screenshots</b> captured "
-           "from the live two-node Kubernetes cluster on Killercoda."),
+           "<i>Note on figures:</i> Figures 3-4 (MLflow, Swagger) are "
+           "programmatically rendered reproductions of the respective UIs, "
+           "produced by <code>scripts/generate_screenshots.py</code> from "
+           "real metrics in <code>reports/metrics.json</code>. Figure 5 "
+           "(Grafana) and Figures 6-12 in §12 are <b>genuine screenshots</b> "
+           "captured from the live Kubernetes cluster on Killercoda."),
         _p(helpers, styles, "Suggested next steps", "h2"),
         *_bullets(helpers, styles, [
             "<b>Model registry:</b> promote the MLflow model to a "
@@ -597,8 +595,8 @@ def section_production_deployment_intro(styles, helpers):
            "containerd on both nodes via "
            "<code>ctr -n=k8s.io images import</code>. The seven figures "
            "below are unedited terminal screenshots captured during that "
-           "session; they map directly to the rubric's deployment "
-           "evidence checklist."),
+           "session; they map directly to the rubric's deployment evidence "
+           "checklist."),
         _p(helpers, styles, "Verification checklist", "h2"),
         *_bullets(helpers, styles, [
             "<b>Cluster context (Fig 6):</b> two <i>Ready</i> nodes "
@@ -708,7 +706,8 @@ def section_deliverables(styles, helpers):
             f"{_link(f'{TREE}/reports/figures', 'reports/figures/')} — "
             "confusion matrix, ROC curve, MLflow / Swagger / Grafana "
             "renderings.",
-            f"{_link(f'{TREE}/screenshots', 'screenshots/')} — seven "
-            "Killercoda deployment screenshots embedded as Figures 6-12.",
+            f"{_link(f'{TREE}/screenshots', 'screenshots/')} — eight "
+            "Killercoda deployment screenshots (terminal captures + live "
+            "Grafana dashboard) embedded as Figures 6-13.",
         ]),
     ]

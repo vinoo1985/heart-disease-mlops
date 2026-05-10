@@ -136,10 +136,12 @@ def build_sections(*, styles: dict, metrics: dict, figures_dir: Path,
     # ---- 6. Monitoring ----
     story += section_monitoring(styles, helpers)
     story += image_fn(figures_dir / "screenshot_grafana.png", 16,
-                      "Figure 5 — Pre-provisioned Grafana dashboard "
-                      "<i>ML › Heart Disease API</i>: stat row, request "
-                      "rate, latency percentiles, class balance and HTTP "
-                      "status codes.")
+                      "Figure 5 — Live Grafana dashboard "
+                      "<i>Heart Disease API</i> rendered from Prometheus "
+                      "scrapes of the Killercoda cluster: request rate by "
+                      "endpoint, latency percentiles, predictions by class, "
+                      "predicted-probability distribution and HTTP status "
+                      "codes.")
     story.append(helpers["PageBreak"]())
 
     # ---- 7. Production deployment evidence (Killercoda screenshots) ----

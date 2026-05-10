@@ -456,9 +456,11 @@ def build() -> Path:
 
     render(doc, section_monitoring(styles, helpers))
     add_image(doc, FIGS / "screenshot_grafana.png",
-              "Figure 5 — Pre-provisioned Grafana dashboard ML › Heart "
-              "Disease API: stat row, request rate, latency percentiles, "
-              "class balance and HTTP status codes.", width_cm=16)
+              "Figure 5 — Live Grafana dashboard 'Heart Disease API' "
+              "rendered from Prometheus scrapes of the Killercoda cluster: "
+              "request rate by endpoint, latency percentiles, predictions "
+              "by class, predicted-probability distribution and HTTP status "
+              "codes.", width_cm=16)
     doc.add_page_break()
 
     render(doc, section_production_deployment_intro(styles, helpers))
